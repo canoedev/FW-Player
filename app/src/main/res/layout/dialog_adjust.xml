@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:id="@+id/ll_rotary"
+				android:background="?attr/selectableItemBackground"
+				android:layout_marginTop="10dp"
+				android:focusable="true"
+				android:clickable="true">
+
+				<View
+					android:layout_width="4dp"
+					android:layout_height="wrap_content"
+					android:background="@color/gray"/>
+
+				<RelativeLayout
+					android:orientation="horizontal"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1.0">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="12dp"
+						android:text="3D 环绕"
+						android:layout_centerVertical="true"
+						android:layout_alignParentLeft="true"
+						android:textSize="17sp"/>
+
+					<Switch
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="12dp"
+						android:id="@+id/s_rotary"
+						android:layout_centerVertical="true"
+						android:layout_alignParentRight="true"
+						android:focusable="false"
+						android:clickable="false"
+						android:layout_marginRight="4dp"/>
+
+				</RelativeLayout>
+
+			</LinearLayout>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="0.6dp"
+				android:background="@color/gray"
+				android:layout_marginTop="4.7dp"
+				android:layout_marginBottom="4.7dp"
+				android:layout_marginLeft="8dp"
+				android:layout_marginRight="8dp"
+				android:alpha="0.5"/>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="60dp">
+
+				<View
+					android:layout_width="4dp"
+					android:layout_height="wrap_content"
+					android:background="@color/red"/>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1.0"
+					android:gravity="left|center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/tv_left"
+						android:layout_marginLeft="12dp"
+						android:layout_marginBottom="10dp"/>
+
+					<SeekBar
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:id="@+id/sb_left"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="60dp">
+
+				<View
+					android:layout_width="4dp"
+					android:layout_height="wrap_content"
+					android:background="@color/green"/>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1.0"
+					android:gravity="left|center"
+					android:layout_marginLeft="8dp"
+					android:layout_marginRight="8dp">
+
+					<HorizontalScrollView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:scrollbars="none">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal">
+
+							<ToggleButton
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:id="@+id/tb_left_20p"
+								android:textOff="20%"
+								android:textOn="20%"
+								android:textColor="@color/gray"
+								android:textStyle="bold"/>
+
+							<ToggleButton
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:id="@+id/tb_left_40p"
+								android:textOff="40%"
+								android:textOn="40%"
+								android:textColor="@color/gray"
+								android:textStyle="bold"/>
+
+							<ToggleButton
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:id="@+id/tb_left_60p"
+								android:textOff="60%"
+								android:textOn="60%"
+								android:textColor="@color/gray"
+								android:textStyle="bold"/>
+
+							<ToggleButton
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:id="@+id/tb_left_80p"
+								android:textOff="80%"
+								android:textOn="80%"
+								android:textColor="@color/gray"
+								android:textStyle="bold"/>
+
+							<ToggleButton
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:id="@+id/tb_left_100p"
+								android:textOff="100%"
+								android:textOn="100%"
+								android:textColor="@color/gray"
+								android:textStyle="bold"/>
+
+						</LinearLayout>
+
+					</HorizontalScrollView>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="0.6dp"
+				android:background="@color/gray"
+				android:layout_marginTop="4.7dp"
+				android:layout_marginBottom="4.7dp"
+				android:layout_marginLeft="8dp"
+				android:layout_marginRight="8dp"
+				android:alpha="0.5"/>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="60dp">
+
+				<View
+					android:layout_width="4dp"
+					android:layout_height="wrap_content"
+					android:background="@color/orange"/>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1.0"
+					android:gravity="left|center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/tv_right"
+						android:layout_marginLeft="12dp"
+						android:layout_marginBottom="10dp"/>
+
+					<SeekBar
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:id="@+id/sb_right"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="60dp">
+
+				<View
+					android:layout_width="4dp"
+					android:layout_height="wrap_content"
+					android:background="@color/pink"/>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1.0"
+					android:gravity="left|center"
+					android:layout_marginLeft="8dp"
+					android:layout_marginRight="8dp">
+
+					<HorizontalScrollView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:scrollbars="none">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal">
+
+							<ToggleButton
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:id="@+id/tb_right_20p"
+								android:textOff="20%"
+								android:textOn="20%"
+								android:textColor="@color/gray"
+								android:textStyle="bold"/>
+
+							<ToggleButton
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:id="@+id/tb_right_40p"
+								android:textOff="40%"
+								android:textOn="40%"
+								android:textColor="@color/gray"
+								android:textStyle="bold"/>
+
+							<ToggleButton
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:id="@+id/tb_right_60p"
+								android:textOff="60%"
+								android:textOn="60%"
+								android:textColor="@color/gray"
+								android:textStyle="bold"/>
+
+							<ToggleButton
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:id="@+id/tb_right_80p"
+								android:textOff="80%"
+								android:textOn="80%"
+								android:textColor="@color/gray"
+								android:textStyle="bold"/>
+
+							<ToggleButton
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:id="@+id/tb_right_100p"
+								android:textOff="100%"
+								android:textOn="100%"
+								android:textColor="@color/gray"
+								android:textStyle="bold"/>
+
+						</LinearLayout>
+
+					</HorizontalScrollView>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

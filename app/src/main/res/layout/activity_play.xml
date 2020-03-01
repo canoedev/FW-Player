@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/background"
+	android:id="@+id/play_rl_parent">
+
+	<VideoView
+		android:id="@+id/play_video_view"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:background="@color/background"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:padding="16dp"
+		android:layout_alignParentTop="true"
+		android:id="@+id/play_ll_top">
+
+		<ImageButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/play_ib_more"
+			android:background="@color/translate"/>
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:id="@+id/play_tv_name"
+			android:textColor="@color/gray"
+			android:ellipsize="marquee"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:singleLine="true"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			android:layout_marginLeft="8dp"
+			android:layout_marginRight="8dp"
+			android:gravity="center"
+			android:shadowColor="@color/white"
+			android:shadowDx="0"
+			android:shadowDy="1"
+			android:shadowRadius="1"
+			android:textSize="18sp"/>
+
+		<ImageButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/play_ib_close"
+			android:background="@color/translate"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:padding="16dp"
+		android:layout_alignParentBottom="true"
+		android:id="@+id/play_ll_bottom">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/play_tv_time"
+			android:textSize="16sp"
+			android:textColor="@color/gray"
+			android:shadowColor="@color/white"
+			android:shadowDx="0"
+			android:shadowDy="1"
+			android:shadowRadius="1"/>
+
+		<SeekBar
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:id="@+id/play_sb_progress"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/play_tv_duration"
+			android:textSize="16sp"
+			android:textColor="@color/gray"
+			android:shadowColor="@color/white"
+			android:shadowDx="0"
+			android:shadowDy="1"
+			android:shadowRadius="1"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/play_ll_view"
+		android:gravity="center"
+		android:layout_centerInParent="true">
+
+		<ImageView
+			android:src="@drawable/ic_music_note_gray_24dp"
+			android:layout_width="120dp"
+			android:layout_height="120dp"
+			android:scaleType="fitXY"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/app_name"
+			android:textColor="@color/gray"
+			android:textStyle="bold"
+			android:textSize="18sp"/>
+
+	</LinearLayout>
+	
+	<ProgressBar
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:id="@+id/play_pb_load"/>
+
+	<ImageButton
+		android:src="@drawable/ic_pause_white_24dp"
+		android:layout_width="72dp"
+		android:layout_height="72dp"
+		android:layout_centerInParent="true"
+		android:background="@drawable/btn_circle"
+		android:id="@+id/play_ib_event"
+		android:scaleType="fitXY"
+		android:padding="18dp"/>
+
+</RelativeLayout>
+

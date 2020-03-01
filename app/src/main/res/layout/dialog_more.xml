@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:background="?attr/selectableItemBackground"
+				android:layout_marginTop="10dp"
+				android:focusable="true"
+				android:clickable="true"
+				android:id="@+id/ll_uri">
+
+				<View
+					android:layout_width="4dp"
+					android:layout_height="wrap_content"
+					android:background="@color/red"
+					android:layout_marginRight="6dp"/>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1.0"
+					android:padding="6dp"
+					android:gravity="left|center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="查看链接"
+						android:textSize="18sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="查看播放媒体所指向的链接"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:background="?attr/selectableItemBackground"
+				android:layout_marginTop="10dp"
+				android:focusable="true"
+				android:clickable="true"
+				android:id="@+id/ll_adjust">
+
+				<View
+					android:layout_width="4dp"
+					android:layout_height="wrap_content"
+					android:background="@color/green"
+					android:layout_marginRight="6dp"/>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1.0"
+					android:padding="6dp"
+					android:gravity="left|center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="左/右声道"
+						android:textSize="18sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="设置所播放媒体的左/右声道"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:background="?attr/selectableItemBackground"
+				android:layout_marginTop="10dp"
+				android:focusable="true"
+				android:clickable="true"
+				android:id="@+id/ll_change">
+
+				<View
+					android:layout_width="4dp"
+					android:layout_height="wrap_content"
+					android:background="@color/orange"
+					android:layout_marginRight="6dp"/>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1.0"
+					android:padding="6dp"
+					android:gravity="left|center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="速度/音调"
+						android:textSize="18sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="调节媒体的播放速度与音调"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:background="?attr/selectableItemBackground"
+				android:layout_marginTop="10dp"
+				android:focusable="true"
+				android:clickable="true"
+				android:id="@+id/ll_mode">
+
+				<View
+					android:layout_width="4dp"
+					android:layout_height="wrap_content"
+					android:background="@color/pink"
+					android:layout_marginRight="6dp"/>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1.0"
+					android:padding="6dp"
+					android:gravity="left|center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="18sp"
+						android:id="@+id/tv_mode_title"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/tv_mode_summary"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:id="@+id/ll_loop"
+				android:background="?attr/selectableItemBackground"
+				android:layout_marginTop="10dp"
+				android:focusable="true"
+				android:clickable="true">
+
+				<View
+					android:layout_width="4dp"
+					android:layout_height="wrap_content"
+					android:background="@color/red"/>
+
+				<RelativeLayout
+					android:orientation="horizontal"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1.0">
+					
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:layout_marginLeft="12dp"
+						android:layout_centerVertical="true">
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="循环播放"
+						android:textSize="18sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="播放结束是否继续播放媒体"/>
+					
+					</LinearLayout>
+
+					<Switch
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="12dp"
+						android:id="@+id/s_loop"
+						android:layout_centerVertical="true"
+						android:layout_alignParentRight="true"
+						android:focusable="false"
+						android:clickable="false"
+						android:layout_marginRight="4dp"/>
+
+				</RelativeLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:id="@+id/ll_restart"
+				android:background="?attr/selectableItemBackground"
+				android:layout_marginTop="10dp"
+				android:focusable="true"
+				android:clickable="true">
+
+				<View
+					android:layout_width="4dp"
+					android:layout_height="wrap_content"
+					android:background="@color/green"/>
+
+				<RelativeLayout
+					android:orientation="horizontal"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1.0">
+
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:layout_marginLeft="12dp"
+						android:layout_centerVertical="true">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="重新加载"
+							android:textSize="18sp"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="播放失败是否再次进行尝试"/>
+						
+					</LinearLayout>
+
+					<Switch
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="12dp"
+						android:id="@+id/s_restart"
+						android:layout_centerVertical="true"
+						android:layout_alignParentRight="true"
+						android:focusable="false"
+						android:clickable="false"
+						android:layout_marginRight="4dp"/>
+					
+				</RelativeLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:background="?attr/selectableItemBackground"
+				android:layout_marginTop="10dp"
+				android:focusable="true"
+				android:clickable="true"
+				android:id="@+id/ll_call">
+
+				<View
+					android:layout_width="4dp"
+					android:layout_height="wrap_content"
+					android:background="@color/orange"
+					android:layout_marginRight="6dp"/>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1.0"
+					android:padding="6dp"
+					android:gravity="left|center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="联系作者"
+						android:textSize="18sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="使用 QQ 联系应用的开发者"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:background="?attr/selectableItemBackground"
+				android:layout_marginTop="10dp"
+				android:focusable="true"
+				android:clickable="true"
+				android:id="@+id/ll_email">
+
+				<View
+					android:layout_width="4dp"
+					android:layout_height="wrap_content"
+					android:background="@color/pink"
+					android:layout_marginRight="6dp"/>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1.0"
+					android:padding="6dp"
+					android:gravity="left|center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="邮箱反馈"
+						android:textSize="18sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="通过发送邮件进行应用反馈"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

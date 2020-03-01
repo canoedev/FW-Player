@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:background="?attr/selectableItemBackground"
+				android:layout_marginTop="10dp"
+				android:focusable="true"
+				android:clickable="true"
+				android:id="@+id/ll_choose">
+
+				<View
+					android:layout_width="4dp"
+					android:layout_height="wrap_content"
+					android:background="@color/red"
+					android:layout_marginRight="6dp"/>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1.0"
+					android:padding="6dp"
+					android:gravity="left|center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="选择文件"
+						android:textSize="18sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="选择一个媒体文件进行播放"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:background="?attr/selectableItemBackground"
+				android:layout_marginTop="10dp"
+				android:focusable="true"
+				android:clickable="true"
+				android:id="@+id/ll_stream">
+
+				<View
+					android:layout_width="4dp"
+					android:layout_height="wrap_content"
+					android:background="@color/green"
+					android:layout_marginRight="6dp"/>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1.0"
+					android:padding="6dp"
+					android:gravity="left|center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="网络串流"
+						android:textSize="18sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="使用网络串流播放指定媒体"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:background="?attr/selectableItemBackground"
+				android:layout_marginTop="10dp"
+				android:focusable="true"
+				android:clickable="true"
+				android:id="@+id/ll_setting">
+
+				<View
+					android:layout_width="4dp"
+					android:layout_height="wrap_content"
+					android:background="@color/orange"
+					android:layout_marginRight="6dp"/>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1.0"
+					android:padding="6dp"
+					android:gravity="left|center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="设置/关于"
+						android:textSize="18sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="软件的设置与关于相关选项"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:background="?attr/selectableItemBackground"
+				android:layout_marginTop="10dp"
+				android:focusable="true"
+				android:clickable="true"
+				android:id="@+id/ll_help">
+
+				<View
+					android:layout_width="4dp"
+					android:layout_height="wrap_content"
+					android:background="@color/pink"
+					android:layout_marginRight="6dp"/>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1.0"
+					android:padding="6dp"
+					android:gravity="left|center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="常见问题"
+						android:textSize="18sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="使用说明与常见问题及解答"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>

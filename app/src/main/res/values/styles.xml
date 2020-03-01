@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+		<item name="android:windowBackground">@color/translate</item>
+        <item name="android:windowIsTranslucent">true</item>
+		<item name="colorAccent">@color/gray</item>
+    </style>
+	
+	<style name="PlayTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+		<item name="colorAccent">@color/gray</item>
+    </style>
+	
+</resources>
